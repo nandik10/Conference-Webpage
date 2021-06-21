@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <title>Conference</title>
+        <meta charset="UTF-8">
+        <meta name ="description" content="Cryptocurrency">
+        <meta name ="robots" content="index,follow">
+        <link rel ="icon" href="https://cryptologos.cc/logos/aragon-ant-logo.png?v=010">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Peter Nandor">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    </head>
+    <body>
+
+        <!-- --Scroll up button---->  
+
+        <button id="btnScrollToTop">
+            <i class="fas fa-arrow-up"></i>   
+        </button>
+
+        <!----Header---->
+
+        <section class="sub-header">
+            <nav class="navbar">
+                <a href="index.html"><img src="https://cryptologos.cc/logos/versions/aragon-ant-logo-full.svg?v=010" alt=""></a>
+                <!-- <a href="index.html"><img src="https://cryptologos.cc/logos/versions/bitcoin-btc-logo-full.svg?v=010" alt=""></a> -->
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./about.html">ABOUT</a></li>
+                        <li><a href="./submission.html">SUBMISSION</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                        <li><a href="./contact.html">CONTACT</a></li>
+                        <a href="./prices.html" class="nav-btn">BUY A PASS</a>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()""></i>
+
+            </nav>
+            <h1>Contact Us</h1>
+        </section>
+
+        <!----About us content---->  
+
+<div class="wrapper">
+        <section class="contact">
+            <div class="contact-div">
+            <div class="form">
+                <div class="contact-info">
+                    <h3 class="contact-title">Let's get in touch</h3>
+                    <p>
+                        Fill in the form and a member of the team will contact you to assist.
+                        <br> If you need any further help please get in touch via email Conference@gmail.com
+                    </p>
+                    <div class="contact-icons">
+                        <div class="cicons">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>A4, London WC2N 5DU, UK</p>
+                        </div>
+                        <div class="cicons">
+                            <i class="far fa-envelope"></i>
+                            <p>Conference@gmail.com</p>
+                        </div>
+                        <div class="cicons">
+                            <i class="fas fa-phone-volume"></i>
+                            <p>0755657595</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <span class="circle one"></span>
+                    <span class="circle two"></span>
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input name ="full-name" class="" placeholder="Your first and last name"></input>
+                        <div class="error-hint hidden">Your name is required.</div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input name ="email" class="" placeholder="Your email address"></input>
+                        <div class="error-hint hidden">Your email is invalid.</div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input name ="phone" placeholder="Your phone number"></input>
+                        <div class="error-hint hidden">Your phone is invalid.</div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name ="message" placeholder="Your message"></textarea>
+                        <div class="error-hint hidden">Your message is required.</div>
+                    </div>
+    
+    
+    
+                    <!-- <hr class="contact-hr"> -->
+    
+                    <button class="contact-button">Submit Message</button>
+                </form>   
+            </div>
+
+            </div> <!--end of contact div -->
+            
+            <div class="thank-you hidden">
+                Thank you for your feedback!
+            </div>
+        </section>
+
+    <section class="footer">
+        <div class="footer-info">
+            <div class="footer-width about">
+                <h2>About</h2>
+                <p>
+                    Shape the future at Cryptocurrency Conference
+                    on 1-3 August. <br>This virtual event will help you see beyond the year with confidence.
+                </p>
+                <div class="social-media">
+                    <ul>
+                        <li><a href="#""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#""><i class="fab fa-instagram"></i></a></li>
+                        <li><a class="linkedin" href="#""><i class="fab fa-linkedin"></i></a></li>
+                        <li><a class="youtube" href="#""><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-width link">
+                <h2>Quick Link</h2>
+                <ul>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./submission.html">Submission</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-width contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li>
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <p>
+                            A4, London WC2N 5DU, UK
+                        </p>
+                    </li>
+                    <li>
+                        <span><i class="far fa-envelope"></i></span>
+                        <p>Conference@gmail.com</p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone-volume"></i></span>
+                        <p>0755657595</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy-right"> 
+            <p> Made by Péter Nándor</p>
+        </div>
+    </section>
+
+
+</div>
+
+        <script>
+            // Navbar script
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu (){
+                navLinks.style.right = "-200px";
+            }
+
+            //Contact form
+
+            const isValidEmail = (email) => {
+            const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+            };
+
+            const isValidPhone = (phone) => {
+            const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+            return re.test(String(phone).toLowerCase());
+            };
+
+
+            const form = document.querySelector('form');
+            const thankYou = document.querySelector(".thank-you");
+            const nameInput = document.querySelector('input[name="full-name"]');
+            // console.log(nameInput);
+            const emailInput = document.querySelector('input[name="email"]');
+            const phoneInput = document.querySelector('input[name="phone"]');
+            const messageInput = document.querySelector('textarea[name="message"]');
+
+            const inputs = [nameInput, emailInput, phoneInput, messageInput];
+
+            let isFormValid = false;
+            let isValidationOn = false;
+
+            const resetElm = (elm) => {
+                elm.classList.remove("invalid");
+                elm.nextElementSibling.classList.add("hidden");
+            };
+
+            const invalidateElm = (elm) => {
+                elm.classList.add('invalid');
+                elm.nextElementSibling.classList.remove("hidden");
+            }
+
+            const validateInputs = () => {
+                if (!isValidationOn) return;
+
+                isFormValid = true;
+
+                inputs.forEach(resetElm);
+
+                if (!nameInput.value) {
+                    invalidateElm(nameInput);
+                    isFormValid = false;
+                }
+
+                if (!isValidEmail(emailInput.value)) {
+                    invalidateElm(emailInput);
+                    isFormValid = false;
+                }
+
+                if (!isValidPhone(phoneInput.value)) {
+                    invalidateElm(phoneInput);
+                    isFormValid = false;
+                }
+
+                if (!messageInput.value) {
+                    invalidateElm(messageInput);
+                    isFormValid = false;
+                }
+
+            }
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                isValidationOn = true;
+                validateInputs();
+                if (isFormValid){
+                    // form.remove();
+                    form.style.display = ("none");
+                    thankYou.classList.remove("hidden");
+                }
+            });
+
+            inputs.forEach((input) => {
+                input.addEventListener("input", () => {
+                    validateInputs();
+                });
+            });
+
+        </script>
+    </body>
+</html>

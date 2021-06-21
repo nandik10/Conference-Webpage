@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <title>Conference</title>
+        <meta charset="UTF-8">
+        <meta name ="description" content="Cryptocurrency">
+        <meta name ="robots" content="index,follow">
+        <link rel ="icon" href="https://cryptologos.cc/logos/aragon-ant-logo.png?v=010">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Peter Nandor">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    </head>
+    <body>
+
+        <!-- --Scroll up button---->  
+
+        <button id="btnScrollToTop">
+            <i class="fas fa-arrow-up"></i>   
+        </button>
+
+        <!----Header---->
+
+        <section class="sub-header">
+            <nav class="navbar">
+                <a href="index.html"><img src="https://cryptologos.cc/logos/versions/aragon-ant-logo-full.svg?v=010" alt=""></a>
+                <!-- <a href="index.html"><img src="https://cryptologos.cc/logos/versions/bitcoin-btc-logo-full.svg?v=010" alt=""></a> -->
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./about.html">ABOUT</a></li>
+                        <li><a href="./submission.html">SUBMISSION</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                        <li><a href="./contact.html">CONTACT</a></li>
+                        <a href="./prices.html" class="nav-btn">BUY A PASS</a>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()""></i>
+
+            </nav>
+            <h1>FAQ</h1>
+        </section>
+
+        <!----FAQ content---->  
+
+<div class="wrapper">     
+    <section class="faq">
+        <h1>How can we help you?</h1>
+        <div class="search-bar">
+            <!-- <i class="fa fa-search"></i> -->
+            <input class="search-input" type="text" placeholder="Type keywords to find answers">
+            <!-- <i class="fa fa-times"></i> -->
+        </div>
+        <h5>You can also browse the topics below to find what you are looking for.</h5>
+        <div class="faq-container">
+            
+                <!-- <div class="accordion-item" id="question1">
+                    <a class="accordion-link" href="#question1">What is the price of a Virtual Festival Pass? 
+                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-minus"></i>
+                    </a>
+                    <div class="faq-answear">
+                        <p>A Virtual Festival Pass for Fast Forward, taking place on 7-10 June, costs £225+VAT. Find out more.
+                            Or book as a group of 5+ for an even better rate! Simply select 5 or more Virtual Festival Passes and you'll only pay £160+VAT per pass.</p>     
+                    </div>
+                </div>
+                
+                <div class="accordion-item" id="question2">
+                    <a class="accordion-link" href="#question2">Can I register multiple people at once? 
+                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-minus"></i>
+                    </a>
+                    <div class="faq-answear">
+                        <p>Yes. You will be able to purchase multiple Virtual Festival Passes in one transaction.
+                            A group rate of £160+VAT per pass is available when you book 5 or more passes within one order. Get in touch if you're interested in registering a large group to find out more.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item" id="question3">
+                    <a class="accordion-link" href="#question3">I am having trouble registering - who can I contact? 
+                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-minus"></i>
+                    </a>
+                    <div class="faq-answear">
+                        <p>If you are experiencing difficulties with the registration form, please contact the Festival of Marketing team by clicking here.  </p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item" id="question4">
+                    <a class="accordion-link" href="#question4">When and where does the Festival take place? 
+                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-minus"></i>
+                    </a>
+                    <div class="faq-answear">
+                        <p>The Festival of Marketing's Fast Forward will take place online on 7-10 June 2021. Get a Virtual Festival Pass to access to Fast Forward live in June and gain access to the sessions on demand for a period of 30 days once the virtual event has commenced.
+                            Get your pass here.</p>
+                    </div>
+                </div> -->
+            <div class="accordion">   
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        What is the price of the Pass? 
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            A Pass for the Conference, taking place on 1-3 August, costs £20+VAT. 
+                            Or book as a group of 5+ for an even better rate! Simply select 5 or more Passes and you'll only pay £15+VAT per pass.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        Can I register multiple people at once? 
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            Yes. You will be able to purchase multiple Conference Passes in one transaction.
+                            A group rate of £15+VAT per pass is available when you book 5 or more passes within one order. <a href="prices.html">Get in touch</a> if you're interested in registering a large group to find out more.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        I am having trouble registering - who can I contact? 
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            If you are experiencing difficulties with the registration form, please contact the Conference team by <a href="./contact.html">clicking here.</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        When and where does the Festival take place? 
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            The Cryptocurrency Conference will take place online on 1-3 August 2021. Get a Virtual Pass to access to the Conference live in August and gain access to the sessions on demand for a period of 30 days once the virtual event has commenced.
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>            
+    </section>
+    <section class="footer">
+        <div class="footer-info">
+            <div class="footer-width about">
+                <h2>About</h2>
+                <p>
+                    Shape the future at Cryptocurrency Conference
+                    on 1-3 August. <br>This virtual event will help you see beyond the year with confidence.
+                </p>
+                <div class="social-media">
+                    <ul>
+                        <li><a href="#""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#""><i class="fab fa-instagram"></i></a></li>
+                        <li><a class="linkedin" href="#""><i class="fab fa-linkedin"></i></a></li>
+                        <li><a class="youtube" href="#""><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-width link">
+                <h2>Quick Link</h2>
+                <ul>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./submission.html">Submission</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-width contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li>
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <p>
+                            A4, London WC2N 5DU, UK
+                        </p>
+                    </li>
+                    <li>
+                        <span><i class="far fa-envelope"></i></span>
+                        <p>Conference@gmail.com</p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone-volume"></i></span>
+                        <p>0755657595</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy-right"> 
+            <p> Made by Péter Nándor</p>
+        </div>
+    </section>
+
+
+</div>
+
+        <script>
+            // Navbar script
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu (){
+                navLinks.style.right = "-200px";
+            }
+
+            //Accordion script
+
+            const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+            accordionItemHeaders.forEach(accordionItemHeader => {
+                accordionItemHeader.addEventListener("click", event => {
+                    const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+                    if (currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader !==accordionItemHeader){
+                        currentlyActiveAccordionItemHeader.classList.toggle("active");
+                        currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+                    }
+
+                    accordionItemHeader.classList.toggle("active");
+                    const accordionItemBody = accordionItemHeader.nextElementSibling;
+                    if(accordionItemHeader.classList.contains("active")){
+                        accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+                    } 
+                    else {
+                        accordionItemBody.style.maxHeight = 0;
+                    }
+                });
+            });
+
+        </script>
+    </body>
+</html>

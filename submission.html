@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <title>Conference</title>
+        <meta charset="UTF-8">
+        <meta name ="description" content="Cryptocurrency">
+        <meta name ="robots" content="index,follow">
+        <link rel ="icon" href="https://cryptologos.cc/logos/aragon-ant-logo.png?v=010">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Peter Nandor">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    </head>
+    <body>
+
+        <!-- --Scroll up button---->  
+
+        <button id="btnScrollToTop">
+            <i class="fas fa-arrow-up"></i>   
+        </button>
+
+        <!----Header---->
+<div class="wrapper">
+
+        <section class="sub-header">
+            <nav class="navbar">
+                <a href="index.html"><img src="https://cryptologos.cc/logos/versions/aragon-ant-logo-full.svg?v=010" alt=""></a>
+                <!-- <a href="index.html"><img src="https://cryptologos.cc/logos/versions/bitcoin-btc-logo-full.svg?v=010" alt=""></a> -->
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./about.html">ABOUT</a></li>
+                        <li><a href="./submission.html">SUBMISSION</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                        <li><a href="./contact.html">CONTACT</a></li>
+                        <a href="./prices.html" class="nav-btn">BUY A PASS</a>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()""></i>
+
+            </nav>
+            <h1>Submit Your Abstract</h1>
+        </section>
+
+        <!----Submission content---->  
+
+        <section class="submission">
+            <h1>In order to submit your abstract you need to log in</h1>
+            <p>Don't have an account? Sign up below!</p>
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="register-btn"></div>
+                    <button type="button" class="toggle-button" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-button" onclick="register()"> Register</button>
+                </div>
+                <div class="form-icons">
+                    <ul>
+                        <li><a href="#""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#""><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <form id="login" class="input-group">
+                    <input type="text" class ="input-field" placeholder="User Id" required>
+                    <input type="password" class ="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span class="form-pwd">Remember Password</span>
+                    <button type="submit" class="submit-button">Log In</button>
+                </form>
+                <form id="register" class="input-group">
+                    <input type="text" class ="input-field" placeholder="User Id" required>
+                    <input type="email" class ="input-field" placeholder="Email Id" required>
+                    <input type="password" class ="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span class="form-pwd">I agree to the terms & conditions</span>
+                    <button type="submit" class="submit-button">Register</button>
+                </form>
+            </div>
+        </section>
+
+    <!-- <section class="footer">
+        <div class="footer-info">
+            <div class="footer-width about">
+                <h2>About</h2>
+                <p>
+                    Shape the future at Cryptocurrency Conference
+                    on 1-3 August. <br>This virtual event will help you see beyond the year with confidence.
+                </p>
+                <div class="social-media">
+                    <ul>
+                        <li><a href="#""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#""><i class="fab fa-instagram"></i></a></li>
+                        <li><a class="linkedin" href="#""><i class="fab fa-linkedin"></i></a></li>
+                        <li><a class="youtube" href="#""><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-width link">
+                <h2>Quick Link</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Sponsors</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-width contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li>
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <p>
+                            537360 Zetea, Harghita, Romania
+                        </p>
+                    </li>
+                    <li>
+                        <span><i class="far fa-envelope"></i></span>
+                        <p>Conference@gmail.com</p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone-volume"></i></span>
+                        <p>0755555555</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy-right"> 
+            <p> Made by Péter Nándor</p>
+        </div>
+    </section> -->
+
+</div>
+
+        <script>
+            // Navbar script
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu (){
+                navLinks.style.right = "-200px";
+            }
+
+            // Login / Register form
+
+            var x = document.getElementById("login")
+            var y = document.getElementById("register")
+            var z = document.getElementById("register-btn")
+
+            function register(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            }
+
+            function login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0px";
+            }
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <title>Conference</title>
+        <meta charset="UTF-8">
+        <meta name ="description" content="Cryptocurrency">
+        <meta name ="robots" content="index,follow">
+        <link rel ="icon" href="https://cryptologos.cc/logos/aragon-ant-logo.png?v=010">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Peter Nandor">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    </head>
+    <body>
+
+        <!-- --Scroll up button---->  
+
+        <button id="btnScrollToTop">
+            <i class="fas fa-arrow-up"></i>   
+        </button>
+
+        <!----Header---->
+
+        <section class="sub-header">
+            <nav class="navbar">
+                <a href="index.html"><img src="https://cryptologos.cc/logos/versions/aragon-ant-logo-full.svg?v=010" alt=""></a>
+                <!-- <a href="index.html"><img src="https://cryptologos.cc/logos/versions/bitcoin-btc-logo-full.svg?v=010" alt=""></a> -->
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./about.html">ABOUT</a></li>
+                        <li><a href="./submission.html">SUBMISSION</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                        <li><a href="./contact.html">CONTACT</a></li>
+                        <a href="./prices.html" class="nav-btn">BUY A PASS</a>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()""></i>
+
+            </nav>
+            <h1>About Us</h1>
+        </section>
+
+        <!----About us content---->  
+
+<div class="wrapper">
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>We've Got One Mission: Getting the audience acquainted with cryptocurrencies</h1>
+                    <p>Since the invention of the Bitcoin(BTC), The Cryptocurrency Conference (formerly known as the TCC Conference) is a yearly international conference on the topic of cryptocurrencies. The Conference assembles investors, researchers, policymakers, practitioners, and end-users with one unifying goal: to envision and create the future of the cryptocurrencies.</p>
+                    <p>We are happy to announce that The Cryptocurrency Conference will <strong class="about-highlight">reconvene in London</strong>, the Heart of England, <strong class="about-highlight">in August (1-3)</strong> 2021. <br>We've poured our energy into building a Conference that can help you continue to deliver important decisions in extraordinary times. The Cryptocurrency Conference will take place in London, England limited to 500 Attendees with several rooms which will be available during the conference including the main room, networking and break rooms, and Q&A rooms. </p>
+                    <h2>Our Objectives</h2>
+                    <ul>
+                        <li>We will work towards fair representation of all groups within Conference programmes, benchmarking ourselves against the diverse make-up of the UK population.</li>
+                        <li>We will commit to working with our partners to help them encourage wider groups of individuals to speak and participate at the Conference.</li>
+                        <li>We will make changes to our communications and physical environments to aim to make them accessible to as many groups of individuals as possible.</li>
+                        <li>We will remain transparent about our progress and encourage our audience, speakers and partners to further challenge us.</li>
+                    </ul>
+                </div>
+                <div class="about-col">
+                    <img src="./images/about_pic.jpg">
+                </div>
+            </div>
+        </section>
+
+    <section class="footer">
+        <div class="footer-info">
+            <div class="footer-width about">
+                <h2>About</h2>
+                <p>
+                    Shape the future at Cryptocurrency Conference
+                    on 1-3 August. <br>This virtual event will help you see beyond the year with confidence.
+                </p>
+                <div class="social-media">
+                    <ul>
+                        <li><a href="#""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#""><i class="fab fa-instagram"></i></a></li>
+                        <li><a class="linkedin" href="#""><i class="fab fa-linkedin"></i></a></li>
+                        <li><a class="youtube" href="#""><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-width link">
+                <h2>Quick Link</h2>
+                <ul>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./submission.html">Submission</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-width contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li>
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <p>
+                            A4, London WC2N 5DU, UK
+                        </p>
+                    </li>
+                    <li>
+                        <span><i class="far fa-envelope"></i></span>
+                        <p>Conference@gmail.com</p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone-volume"></i></span>
+                        <p>0755657595</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy-right"> 
+            <p> Made by Péter Nándor</p>
+        </div>
+    </section>
+
+
+</div>
+
+        <script>
+            // Navbar script
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu (){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+    </body>
+</html>
